@@ -13,7 +13,7 @@ You can learn more about API usage in the [arcana.cpp documentation](Source/Arca
 ### Prerequisites
 
 - CMake 3.15 or higher
-- A C++20 compatible compiler (Visual Studio 2022+, GCC 10+, or Clang 10+)
+- A C++20 compatible compiler (Visual Studio 2022+, GCC 11+, or Clang 12+)
 
 ### Building with CMake
 
