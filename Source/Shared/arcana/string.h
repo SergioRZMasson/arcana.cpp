@@ -5,19 +5,7 @@
 #include <locale>
 #include <string>
 
-#ifdef _MSC_VER
 #include <string_view>
-#else
-// llvm-libc++ included with Android NDK r15c hasn't yet promoted the C++1z library fundamentals
-// technical specification to the final C++17 specification for string_view.
-// Force promote the types we need up into the std namespace.
-#include <experimental/string_view>
-namespace std
-{
-    using string_view = experimental::string_view;
-    using wstring_view = experimental::wstring_view;
-}
-#endif
 
 namespace arcana
 {
